@@ -4,46 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business promotion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Inter:opsz,wght@14..32,500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header>
-      <a href="index.html">
-        <img src="./images/logo.svg" alt="logo" width="40" height="36" />Product
-      </a>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <img
+            src="./images/logo.svg"
+            alt="logo"
+            width="40"
+            height="36"
+          />Product
+        </a>
 
-      <nav>
-        <ul>
-          <li><a href="./index.html"></a>Product</li>
-          <li><a href="./pricing.html"></a>Pricing</li>
-          <li><a href="./customers.html"></a>Customers</li>
-          <li><a href=""></a>Resources</li>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link product-link" href="./index.html"></a
+              >Product
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./pricing.html"></a>Pricing
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./customers.html"></a>Customers
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href=""></a>Resources
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-btn-list">
+          <li class="button-list-item">
+            <button class="header-btn" type="button">Sign In</button>
+          </li>
+          <li class="button-list-item">
+            <button class="header-btn" type="button">Sign Up</button>
+          </li>
         </ul>
-      </nav>
-
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
 
     <main></main>
 
-    <section>
-      <h1>Work at the speed of thought</h1>
-      <p>
-        Tools, tutorials, design and innovation experts, all in one place! The
-        most intuitive way to imagine your next user experience.
-      </p>
-      <ul>
-        <li><button type="button">Get started</button></li>
-        <li><button type="button">Watch the Video</button></li>
-      </ul>
-      <img
-        src="./images/hero-img.svg"
-        alt="hero-img"
-        width="610"
-        height="555"
-      />
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Work at the speed of thought</h1>
+        <p class="hero-text">
+          Tools, tutorials, design and innovation experts, all in one place! The
+          most intuitive way to imagine your next user experience.
+        </p>
+        <ul class="hero-btn-list">
+          <li class="hero-item">
+            <button class="hero-btn-start" type="button">Get started</button>
+          </li>
+          <li class="hero-item">
+            <button class="hero-btn-video" type="button">
+              Watch the Video
+            </button>
+          </li>
+        </ul>
+        <img
+          src="./images/hero-img.svg"
+          alt="hero-img"
+          width="610"
+          height="555"
+        />
+      </div>
     </section>
 
     <section>
@@ -191,45 +234,52 @@
     </section>
 
     <section>
-      <h2>Quick & Easy Process</h2>
-      <p>
-        Do you require some help for your project: Conception workshop,
-        prototyping, marketing strategy, landing page, Ux/UI?
-      </p>
-      <ul>
-        <li>
-          <img src="./images/avatar.png" alt="avatr" width="98" height="98" />
-          <p>I can take care of your pitch</p>
-        </li>
-        <li>
-          <p>I can prototype your app</p>
-          <img
-            src="./images/avatar-2.png"
-            alt="avatar-2"
-            width="98"
-            height="98"
-          />
-        </li>
-        <li>
-          <p>I can take care of your pitch</p>
-          <img
-            src="./images/avatar-3.png"
-            alt="avatar-3"
-            width="98"
-            height="98"
-          />
-        </li>
-        <li>
-          <img
-            src="./images/avatar-4.png"
-            alt="avatar-4"
-            width="98"
-            height="98"
-          />
-          <p>I can help marketing strategy</p>
-        </li>
-      </ul>
-      <button type="button">Contact our expert</button>
+      <div class="container">
+        <h2 class="title-process">Quick & Easy Process</h2>
+        <p class="title-process-text">
+          Do you require some help for your project: Conception workshop,
+          prototyping, marketing strategy, landing page, Ux/UI?
+        </p>
+        <ul class="process-list">
+          <li class="process-item">
+            <img
+              src="./images/avatar.png"
+              alt="avatar"
+              width="98"
+              height="98"
+            />
+            <p class="process-text">I can take care of your pitch</p>
+          </li>
+          <li class="process-item">
+            <p class="process-text">I can prototype your app</p>
+            <img
+              src="./images/avatar-2.png"
+              alt="avatar-2"
+              width="98"
+              height="98"
+            />
+          </li>
+          <li class="process-item">
+            <p class="process-text">I can take care of your pitch</p>
+            <img
+              src="./images/avatar-3.png"
+              alt="avatar-3"
+              width="98"
+              height="98"
+            />
+          </li>
+          <li class="process-item">
+            <img
+              src="./images/avatar-4.png"
+              alt="avatar-4"
+              width="98"
+              height="98"
+            />
+            <p class="process-text">I can help marketing strategy</p>
+          </li>
+        </ul>
+        <button class="process-btn" type="button">Contact our expert</button>
+      </div>
     </section>
 
     <section>
