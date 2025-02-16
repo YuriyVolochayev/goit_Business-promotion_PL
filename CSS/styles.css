@@ -67,8 +67,7 @@ button {
   align-items: center;
   gap: 30px;
 }
-.header-nav-item {
-}
+
 .header-nav-link {
   padding: 26px 0;
   font-weight: 400;
@@ -84,8 +83,7 @@ button {
   display: flex;
   gap: 21px;
 }
-.button-list-item {
-}
+
 .header-btn {
   border: 1px solid #bcd0e5;
   border-radius: 4px;
@@ -136,8 +134,7 @@ button {
   display: flex;
   gap: 30px;
 }
-.hero-item {
-}
+
 .hero-btn-start {
   border-radius: 4px;
   border: none;
@@ -158,4 +155,54 @@ button {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #02897a;
+}
+
+/* FEATURE SECTION */
+
+.feature {
+  padding-bottom: 100px;
+}
+.feature-container {
+}
+.feature-title {
+  max-width: 506px;
+  margin-bottom: 50px;
+  font-size: 32px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.feature-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.feature-item {
+  width: calc((100% - 90px) / 4);
+}
+.feature-subtitle {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+.feature-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.feature-btn {
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  min-width: 175px;
+  height: 53px;
+  background: #02897a;
+  border-radius: 4px;
+  border: none;
+  text-transform: uppercase;
 }
