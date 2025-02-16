@@ -64,12 +64,12 @@ button {
 }
 .header-nav-list {
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 .header-nav-item {
 }
 .header-nav-link {
-  display: block;
   padding: 26px 0;
   font-weight: 400;
   font-size: 16px;
